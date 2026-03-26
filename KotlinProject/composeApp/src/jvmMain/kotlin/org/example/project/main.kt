@@ -30,21 +30,15 @@ import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import recursos.Carta
 
-private val fondoMesa = Brush.verticalGradient(
-    colors = listOf(
-        Color(0xFF05110D),
-        Color(0xFF123328),
-        Color(0xFF030A08),
-    )
-)
 
-private val colorTitulo = Color(0xFFFFE08A)
-private val colorTexto = Color(0xFFFFFBF0)
-private val colorTextoSecundario = Color(0xFFE8F3EC)
-private val colorBotonPrincipal = Color(0xFFE63946)
-private val colorBotonSecundario = Color(0xFF264653)
-private val colorBotonAccion = Color(0xFF7B2CBF)
-private val colorBotonSalir = Color(0xFF2A9D8F)
+private const val TEXTO_PRESENTACION =
+    "- El usuario es el jugador y el ordenador la banca.\n" +
+    "- No hay en la baraja 8s y 9s. El 10 es la sota, el 11 el caballo y el 12 el Rey.\n" +
+    "- Las figuras valen medio punto y el resto su valor.\n" +
+    "- Primero juega el jugador.\n" +
+    "- El jugador puede pedir cartas o plantarse.\n" +
+    "- Si supera 7.5 pierde.\n" +
+    "- Luego juega la banca, que debe empatar o superar al jugador sin pasarse.\n"
 
 @Composable
 fun App() {
@@ -101,7 +95,6 @@ fun inicio(comenzar: () -> Unit) {
 @Composable
 fun juego(inicio: () -> Unit, seguirJugando: () -> Unit) {
     val logicaJuego by remember { mutableStateOf(SieteYMedia()) }
-    val mensajesJuego by remember { mutableStateOf(InterfaceConsola(logicaJuego)) }
     val continuar = remember { mutableStateListOf(false, false) }
 
     MaterialTheme {
@@ -117,7 +110,7 @@ fun juego(inicio: () -> Unit, seguirJugando: () -> Unit) {
             ) {
                 if (!continuar[0]) {
                     Text(
-                        text = mensajesJuego.presentarJuego(),
+                        text = TEXTO_PRESENTACION,
                         color = colorTexto,
                         fontSize = 18.sp,
                         fontWeight = FontWeight.Medium,
@@ -310,6 +303,22 @@ fun turnoBanca(objAlgoritmo: SieteYMedia, valorJugador: Double) {
         }
     }
 }
+
+private val fondoMesa = Brush.verticalGradient(
+    colors = listOf(
+        Color(0xFF05110D),
+        Color(0xFF123328),
+        Color(0xFF030A08),
+    )
+)
+
+private val colorTitulo = Color(0xFFFFE08A)
+private val colorTexto = Color(0xFFFFFBF0)
+private val colorTextoSecundario = Color(0xFFE8F3EC)
+private val colorBotonPrincipal = Color(0xFFE63946)
+private val colorBotonSecundario = Color(0xFF264653)
+private val colorBotonAccion = Color(0xFF7B2CBF)
+private val colorBotonSalir = Color(0xFF2A9D8F)
 
 fun main() = application {
     Window(
