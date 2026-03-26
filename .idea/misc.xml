@@ -1,0 +1,7 @@
+<project version="4">
+  <component name="ProjectRootManager">
+    <option name="projectJdkName" value="temurin-17" />
+    <option name="projectJdkType" value="JavaSDK" />
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

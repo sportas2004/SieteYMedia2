@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="KotlinProject.composeApp" target="17" />
+      <module name="KotlinProject.composeApp.jvmDev" target="17" />
+      <module name="KotlinProject.composeApp.jvmMain" target="17" />
+      <module name="KotlinProject.composeApp.jvmTest" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

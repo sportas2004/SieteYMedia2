@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KotlinProject.iml" filepath="$PROJECT_DIR$/.idea/modules/KotlinProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/composeApp/KotlinProject.composeApp.iml" filepath="$PROJECT_DIR$/.idea/modules/composeApp/KotlinProject.composeApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/composeApp/KotlinProject.composeApp.commonMain.iml" filepath="$PROJECT_DIR$/.idea/modules/composeApp/KotlinProject.composeApp.commonMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/composeApp/KotlinProject.composeApp.commonTest.iml" filepath="$PROJECT_DIR$/.idea/modules/composeApp/KotlinProject.composeApp.commonTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/composeApp/KotlinProject.composeApp.jvmDev.iml" filepath="$PROJECT_DIR$/.idea/modules/composeApp/KotlinProject.composeApp.jvmDev.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/composeApp/KotlinProject.composeApp.jvmMain.iml" filepath="$PROJECT_DIR$/.idea/modules/composeApp/KotlinProject.composeApp.jvmMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/composeApp/KotlinProject.composeApp.jvmTest.iml" filepath="$PROJECT_DIR$/.idea/modules/composeApp/KotlinProject.composeApp.jvmTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SieteyMedio.iml" filepath="$PROJECT_DIR$/.idea/SieteyMedio.iml" />
+    </modules>
+  </component>
+</project>
